@@ -64,6 +64,72 @@
   min-width: 0;
 }
 
+/* Hero Google Official Review Micro-Badge (PA 1A) */
+.bf-hero-google-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 10px;
+  background: #ffffff;
+  color: #1e293b;
+  padding: 6px 14px 6px 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 100%;
+}
+
+.bf-hero-google-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.bf-google-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.bf-g-stars {
+  color: #f59e0b;
+  letter-spacing: 1px;
+  font-size: 0.88rem;
+  display: inline-flex;
+}
+
+.bf-g-score {
+  font-weight: 900;
+  color: #0f172a;
+  font-size: 0.82rem;
+  margin-left: 1px;
+}
+
+.bf-g-sep {
+  color: #cbd5e1;
+  font-weight: 700;
+}
+
+.bf-g-text {
+  font-size: 0.78rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.bf-g-text strong {
+  color: #0f172a;
+}
+
+.bf-g-text-mobile {
+  display: none;
+}
+
+.bf-g-text-desktop {
+  display: inline;
+}
+
 .bf-hero-script-tag {
   font-family: var(--bf-font-script);
   font-size: 2.2rem;
@@ -600,8 +666,125 @@
   line-height: 1.6;
 }
 
+/* ==========================================================================
+   THE BLUE FLAME TRUST RIBBON (PA 2B)
+   ========================================================================== */
+.bf-trust-ribbon-section {
+  padding: 30px 0 40px;
+  background: var(--bf-bg-page, #f8fafc);
+  border-bottom: 1px solid var(--bf-border, #e2e8f0);
+}
+
+.bf-trust-ribbon {
+  background: #ffffff;
+  border: 1px solid var(--bf-border, #e2e8f0);
+  border-radius: 18px;
+  padding: 20px 14px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(2, 23, 46, 0.05);
+}
+
+.bf-ribbon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8px 10px;
+  border-right: 1px solid #f1f5f9;
+  transition: all 0.25s ease;
+  border-radius: 12px;
+}
+
+.bf-ribbon-item:last-child {
+  border-right: none;
+}
+
+.bf-ribbon-item:hover {
+  background: #f8fafc;
+  transform: translateY(-2px);
+}
+
+.bf-ribbon-item.highlight {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+}
+
+.bf-ribbon-item.highlight:hover {
+  background: #ffedd5;
+}
+
+.bf-ribbon-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.bf-ribbon-item:hover .bf-ribbon-icon {
+  transform: scale(1.1);
+}
+
+.bf-ribbon-icon.icon-star {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.bf-ribbon-icon.icon-heritage {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.bf-ribbon-icon.icon-clock {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.bf-ribbon-icon.icon-shield {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.bf-ribbon-icon.icon-price {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+
+.bf-ribbon-icon.icon-tools {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.bf-ribbon-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--bf-navy, #03172e);
+  line-height: 1.25;
+  margin-bottom: 3px;
+}
+
+.bf-ribbon-sub {
+  font-size: 0.72rem;
+  color: var(--bf-text-muted, #64748b);
+  line-height: 1.3;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
+  .bf-trust-ribbon {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .bf-ribbon-item {
+    border-right: none;
+    border: 1px solid #f1f5f9;
+  }
   .bf-hero-grid {
     grid-template-columns: 1fr;
     gap: 36px;
@@ -624,6 +807,53 @@
 }
 
 @media (max-width: 768px) {
+  .bf-g-text-desktop {
+    display: none;
+  }
+  .bf-g-text-mobile {
+    display: inline;
+  }
+  .bf-hero-google-badge {
+    align-self: center;
+    margin: 0 auto 12px auto;
+    font-size: 0.74rem;
+    padding: 5px 12px 5px 8px;
+    white-space: nowrap;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .bf-trust-ribbon-section {
+    padding: 24px 0 30px;
+  }
+  .bf-trust-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 12px 8px;
+    border-radius: 14px;
+  }
+  .bf-ribbon-item {
+    padding: 10px 6px;
+    border: 1px solid #f1f5f9;
+    border-radius: 10px;
+    border-right: 1px solid #f1f5f9;
+  }
+  .bf-ribbon-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+  }
+  .bf-ribbon-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  .bf-ribbon-title {
+    font-size: 0.78rem;
+    margin-bottom: 2px;
+  }
+  .bf-ribbon-sub {
+    font-size: 0.66rem;
+  }
   .bf-hero {
     padding: 45px 0 55px;
   }
@@ -756,6 +986,33 @@
 }
 
 @media (max-width: 480px) {
+  .bf-hero-google-badge {
+    padding: 4px 10px 4px 6px;
+    gap: 6px;
+    font-size: 0.72rem;
+    margin: 0 auto 10px auto;
+  }
+  .bf-google-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .bf-g-stars {
+    font-size: 0.75rem;
+  }
+  .bf-trust-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 10px 6px;
+  }
+  .bf-ribbon-item {
+    padding: 8px 4px;
+  }
+  .bf-ribbon-title {
+    font-size: 0.74rem;
+  }
+  .bf-ribbon-sub {
+    font-size: 0.62rem;
+  }
   .bf-hero-title {
     font-size: clamp(1.48rem, 6.2vw, 1.85rem);
     line-height: 1.2;

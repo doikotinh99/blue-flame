@@ -132,12 +132,12 @@
 .bf-brand-img {
   height: 48px;
   width: auto;
+  max-width: 250px;
   object-fit: contain;
 }
 
 .bf-brand-text {
-  display: flex;
-  flex-direction: column;
+  display: none !important;
 }
 
 .bf-brand-name {
@@ -417,20 +417,17 @@
 
 .bf-drawer-header img,
 .bf-drawer-brand img {
-  height: 40px !important;
+  height: 48px !important;
   width: auto !important;
-  max-height: 40px !important;
-  max-width: 48px !important;
+  max-height: 52px !important;
+  max-width: 210px !important;
   object-fit: contain;
   flex-shrink: 0;
 }
 
+.bf-drawer-brand .bf-brand-text,
 .bf-drawer-brand-name {
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: var(--bf-navy);
-  letter-spacing: -0.2px;
-  white-space: nowrap;
+  display: none !important;
 }
 
 .bf-drawer-brand-name span {
@@ -587,17 +584,14 @@
 }
 
 .bf-footer-brand-logo img {
-  height: 38px !important;
+  height: 46px !important;
   width: auto !important;
-  max-width: 120px !important;
+  max-width: 230px !important;
   object-fit: contain !important;
 }
 
 .bf-footer-brand-logo span {
-  font-size: 1.05rem !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
-  letter-spacing: 0.5px;
+  display: none !important;
 }
 
 .bf-footer-desc {
@@ -855,10 +849,11 @@
     letter-spacing: -0.2px;
   }
   .bf-header-container {
-    height: 64px;
+    height: 70px;
   }
   .bf-brand-img {
-    height: 36px;
+    height: 48px;
+    max-width: 200px;
   }
   .bf-brand-name {
     font-size: 1.05rem;
@@ -928,7 +923,8 @@
     font-size: 0.78rem;
   }
   .bf-brand-img {
-    height: 32px;
+    height: 44px;
+    max-width: 185px;
   }
   .bf-brand-name {
     font-size: 0.98rem;
