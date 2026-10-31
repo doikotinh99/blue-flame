@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hpbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051329"/>
+      <stop offset="100%" stop-color="#0e2a54"/>
+    </linearGradient>
+    <linearGradient id="hpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="50%" stop-color="#1d5cb0"/>
+      <stop offset="100%" stop-color="#ff1a75"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#hpbg)"/>
+  <!-- Heat Pump Dual Stage Outdoor Cabinet -->
+  <rect x="110" y="50" width="180" height="190" rx="14" fill="#1e293b" stroke="url(#hpGrad)" stroke-width="3"/>
+  <circle cx="200" cy="140" r="45" fill="#071933" stroke="#00e5ff" stroke-width="2"/>
+  <path d="M 200 140 L 200 100 A 40 40 0 0 1 235 125 Z" fill="#00e5ff" opacity="0.8"/>
+  <path d="M 200 140 L 235 155 A 40 40 0 0 1 200 180 Z" fill="#ff4d30" opacity="0.8"/>
+  <path d="M 200 140 L 165 155 A 40 40 0 0 1 165 125 Z" fill="#ff1a75" opacity="0.8"/>
+  <circle cx="200" cy="140" r="10" fill="#ffffff"/>
+  <!-- Badge -->
+  <rect x="135" y="210" width="130" height="18" rx="5" fill="#0f366d" stroke="#00e5ff" stroke-width="1"/>
+  <text x="200" y="223" fill="#00e5ff" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">-15°F COLD-CLIMATE</text>
+  <text x="200" y="275" fill="#ffffff" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">Inverter Dual-Fuel Heat Pump</text>
+</svg>

@@ -1,0 +1,578 @@
+/* ==========================================================================
+   BLUE FLAME HEATING & COOLING - REUSABLE UI COMPONENTS
+   File: css/components.css
+   ========================================================================== */
+
+/* 1. BUTTONS */
+.bf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: var(--bf-radius-pill);
+  transition: var(--bf-transition);
+  cursor: pointer;
+  border: 1px solid transparent;
+  line-height: 1.2;
+}
+
+.bf-btn-primary {
+  background: linear-gradient(135deg, var(--bf-blue) 0%, var(--bf-blue-light) 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px var(--bf-blue-glow);
+}
+
+.bf-btn-primary:hover {
+  background: linear-gradient(135deg, var(--bf-blue-hover) 0%, var(--bf-blue) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px var(--bf-blue-glow);
+  color: #fff;
+}
+
+.bf-btn-flame {
+  background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px var(--bf-shadow-warm);
+}
+
+.bf-btn-flame:hover {
+  background: linear-gradient(135deg, #e0531c 0%, #ea580c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px var(--bf-shadow-warm);
+  color: #fff;
+}
+
+.bf-btn-outline {
+  background: transparent;
+  border-color: var(--bf-border);
+  color: var(--bf-navy);
+}
+
+.bf-btn-outline:hover {
+  border-color: var(--bf-blue);
+  color: var(--bf-blue);
+  background: var(--bf-blue-soft);
+}
+
+.bf-btn-outline-white {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.bf-btn-outline-white:hover {
+  border-color: var(--bf-cyan);
+  color: var(--bf-cyan);
+  background: rgba(0, 210, 255, 0.1);
+}
+
+.bf-btn-sm {
+  padding: 8px 16px;
+  font-size: 0.84rem;
+}
+
+.bf-btn-lg {
+  padding: 16px 32px;
+  font-size: 1.05rem;
+}
+
+/* 2. SECTION HEADERS */
+.bf-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.bf-section-sm {
+  padding: 50px 0;
+}
+
+.bf-section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px;
+}
+
+.bf-section-header.text-left {
+  text-align: left;
+  margin-left: 0;
+}
+
+.bf-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--bf-blue);
+  background: var(--bf-blue-soft);
+  padding: 6px 14px;
+  border-radius: var(--bf-radius-pill);
+  margin-bottom: 14px;
+}
+
+.bf-eyebrow-flame {
+  color: #ff6b35;
+  background: #fff7ed;
+}
+
+.bf-section-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  color: var(--bf-navy);
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.bf-section-desc {
+  font-size: 1.05rem;
+  color: #334155;
+  line-height: 1.65;
+}
+
+/* 3. CARDS & BENTO CONTAINERS */
+.bf-card {
+  background: #ffffff;
+  border-radius: var(--bf-radius-lg);
+  border: 1px solid #e2e8f0;
+  padding: 30px;
+  box-shadow: 0 4px 18px rgba(3, 23, 46, 0.07);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.bf-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(3, 23, 46, 0.12);
+  border-color: rgba(2, 132, 199, 0.35);
+}
+
+.bf-card p {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.65;
+}
+
+.bf-glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: var(--bf-radius-lg);
+  box-shadow: var(--bf-shadow-md);
+}
+
+.bf-dark-card {
+  background: var(--bf-navy-surface);
+  border: 1px solid var(--bf-navy-card);
+  border-radius: var(--bf-radius-lg);
+  color: #fff;
+  padding: 30px;
+}
+
+/* 4. FORM ELEMENTS */
+.bf-form-group {
+  margin-bottom: 18px;
+}
+
+.bf-form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--bf-navy);
+  margin-bottom: 6px;
+}
+
+.bf-form-control {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  border: 1px solid var(--bf-border);
+  border-radius: var(--bf-radius-md);
+  background: #fff;
+  color: var(--bf-text-dark);
+  transition: var(--bf-transition-fast);
+}
+
+.bf-form-control:focus {
+  border-color: var(--bf-blue);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+textarea.bf-form-control {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* 5. ACCORDION */
+.bf-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bf-accordion-item {
+  background: #fff;
+  border: 1px solid var(--bf-border);
+  border-radius: var(--bf-radius-md);
+  overflow: hidden;
+  transition: var(--bf-transition);
+}
+
+.bf-accordion-header {
+  padding: 18px 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--bf-navy);
+  background: #fff;
+  user-select: none;
+}
+
+.bf-accordion-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--bf-blue);
+  transition: transform 0.3s ease;
+}
+
+.bf-accordion-item.active .bf-accordion-icon {
+  transform: rotate(180deg);
+}
+
+.bf-accordion-body {
+  padding: 0 24px 20px;
+  color: var(--bf-text-muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  display: none;
+}
+
+.bf-accordion-item.active .bf-accordion-body {
+  display: block;
+}
+
+/* 6. MODAL */
+.bf-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 23, 46, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 3000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bf-modal.active {
+  display: flex;
+}
+
+.bf-modal-dialog {
+  background: #fff;
+  width: 100%;
+  max-width: 580px;
+  border-radius: var(--bf-radius-lg);
+  box-shadow: var(--bf-shadow-xl);
+  overflow: hidden;
+  animation: bfModalPop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes bfModalPop {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.bf-modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--bf-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bf-modal-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--bf-navy);
+}
+
+.bf-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--bf-text-muted);
+}
+
+.bf-modal-body {
+  padding: 24px;
+}
+
+/* 7. PARTNER LOGO BAR */
+.bf-partner-bar {
+  background: #fff;
+  padding: 30px 0;
+  border-top: 1px solid var(--bf-border);
+  border-bottom: 1px solid var(--bf-border);
+}
+
+.bf-partner-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 32px;
+  opacity: 0.85;
+}
+
+.bf-partner-item {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: var(--bf-transition-fast);
+}
+
+.bf-partner-item:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.bf-partner-item img, .bf-partner-item svg {
+  height: 34px;
+  width: auto;
+}
+
+/* Mobile Component Optimizations */
+@media (max-width: 640px) {
+  .bf-modal {
+    padding: 12px;
+    align-items: flex-end; /* Sheet style on mobile */
+  }
+  .bf-modal-dialog {
+    max-height: 85vh;
+    border-radius: var(--bf-radius-xl) var(--bf-radius-xl) 0 0;
+    overflow-y: auto;
+  }
+  .bf-modal-header {
+    padding: 16px 20px;
+  }
+  .bf-modal-body {
+    padding: 20px;
+  }
+  .bf-btn-lg {
+    padding: 14px 22px;
+    font-size: 0.98rem;
+  }
+  .bf-accordion-header {
+    padding: 16px 18px;
+    font-size: 0.95rem;
+  }
+  .bf-accordion-body {
+    padding: 0 18px 18px;
+    font-size: 0.9rem;
+  }
+  .bf-card {
+    padding: 20px 16px;
+  }
+}
+
+/* ==========================================================================
+   LEGACY & INNER PAGE COMPATIBILITY & CONTRAST FOUNDATION
+   ========================================================================== */
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* 1. Global SVG Icon Sizing */
+.svg-icon {
+  width: 1.15em;
+  height: 1.15em;
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* 2. High-Contrast Section Backgrounds */
+.section {
+  padding: 80px 0;
+  position: relative;
+}
+.section-dark {
+  background-color: #f8fafc !important;
+  color: var(--bf-text-body) !important;
+}
+.section-navy {
+  background-color: #f8fafc !important;
+  color: var(--bf-text-body) !important;
+}
+.section-deep {
+  background-color: #f1f5f9 !important;
+  color: var(--bf-text-body) !important;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #03172e !important;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.section-subtitle {
+  font-size: 1.08rem;
+  color: #64748b !important;
+  line-height: 1.6;
+}
+
+/* 3. Grid Systems */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+@media (max-width: 992px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .grid-2 > div, .grid-3 > div, .grid-4 > div {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+/* 4. Badges & Pills (P4-1: High Contrast >= 4.5:1) */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: var(--bf-radius-pill);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .badge-pill {
+    white-space: normal;
+    text-align: center;
+    font-size: 0.74rem;
+    padding: 5px 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+  }
+}
+.badge-salmon, .badge-pink {
+  background-color: #fff7ed !important;
+  color: #c2410c !important;
+  border: 1px solid rgba(194, 65, 12, 0.35) !important;
+}
+.badge-blue {
+  background-color: #f0f9ff !important;
+  color: #0369a1 !important;
+  border: 1px solid rgba(3, 105, 161, 0.35) !important;
+}
+
+/* 5. Legacy High-Contrast Button Variants -> Blue Flame Clean Styling */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 28px;
+  border-radius: var(--bf-radius-pill);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: var(--bf-transition);
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-salmon, .btn-pink {
+  background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3) !important;
+  border: none !important;
+}
+.btn-salmon:hover, .btn-pink:hover {
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45) !important;
+  color: #ffffff !important;
+}
+.btn-blue {
+  background: linear-gradient(135deg, #0074c6 0%, #0284c7 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(0, 116, 198, 0.3) !important;
+  border: none !important;
+}
+.btn-blue:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #0074c6 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 116, 198, 0.45) !important;
+  color: #ffffff !important;
+}
+.btn-outline {
+  background: #ffffff !important;
+  border: 1.5px solid #cbd5e1 !important;
+  color: #03172e !important;
+}
+.btn-outline:hover {
+  background: #f0f7ff !important;
+  border-color: #0074c6 !important;
+  color: #0074c6 !important;
+  transform: translateY(-2px);
+}
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 0.88rem;
+  border-radius: var(--bf-radius-sm);
+}
+.btn-lg {
+  padding: 16px 36px;
+  font-size: 1.15rem;
+}
+@media (max-width: 640px) {
+  .btn-lg {
+    padding: 13px 20px;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}

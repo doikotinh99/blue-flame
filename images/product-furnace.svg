@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051329"/>
+      <stop offset="100%" stop-color="#0e2a54"/>
+    </linearGradient>
+    <linearGradient id="fireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="50%" stop-color="#ff4d30"/>
+      <stop offset="100%" stop-color="#ff1a75"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#fbg)"/>
+  <!-- Tall Furnace Cabinet -->
+  <rect x="130" y="35" width="140" height="220" rx="10" fill="#1e293b" stroke="#ff4d30" stroke-width="3"/>
+  <line x1="130" y1="120" x2="270" y2="120" stroke="#475569" stroke-width="2"/>
+  <!-- Burner Viewport Window -->
+  <rect x="160" y="60" width="80" height="40" rx="6" fill="#030914" stroke="#ff1a75" stroke-width="1.5"/>
+  <!-- Glowing Gas Flames -->
+  <path d="M 180 88 C 175 75, 185 68, 188 65 C 192 73, 200 78, 195 88 Z" fill="url(#fireGrad)"/>
+  <path d="M 198 88 C 195 75, 205 68, 208 65 C 212 73, 220 78, 215 88 Z" fill="url(#fireGrad)"/>
+  <!-- Lower Blower Compartment Grill -->
+  <line x1="150" y1="150" x2="250" y2="150" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="150" y1="170" x2="250" y2="170" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="150" y1="190" x2="250" y2="190" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="150" y1="210" x2="250" y2="210" stroke="#38bdf8" stroke-width="2"/>
+  <!-- Badge -->
+  <rect x="155" y="230" width="90" height="16" rx="4" fill="#ff4d30"/>
+  <text x="200" y="242" fill="#ffffff" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">98% AFUE GAS</text>
+  <text x="200" y="280" fill="#ffffff" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">Modulating Gas Furnace</text>
+</svg>

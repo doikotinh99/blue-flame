@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Alex+Brush&family=Great+Vibes&display=swap');
+
+/* ==========================================================================
+   BLUE FLAME HEATING & COOLING - DESIGN TOKENS & BASE FOUNDATION
+   File: css/variables.css
+   ========================================================================== */
+
+:root {
+  /* Brand Primary Colors - Blue Flame Signature */
+  --bf-navy-dark: #020c18;
+  --bf-navy: #03172e;
+  --bf-navy-surface: #072242;
+  --bf-navy-card: #0b2b52;
+  
+  --bf-blue: #0074c6;
+  --bf-blue-light: #0284c7;
+  --bf-blue-hover: #0369a1;
+  --bf-blue-soft: #e0f2fe;
+  --bf-blue-glow: rgba(2, 132, 199, 0.35);
+
+  --bf-cyan: #00d2ff;
+  --bf-cyan-glow: rgba(0, 210, 255, 0.45);
+  --bf-cyan-soft: #ecfeff;
+  --bf-flame-blue: #38bdf8;
+
+  /* Accent Flame & Energy Colors */
+  --bf-flame-warm: #ff6b35;
+  --bf-flame-orange: #f97316;
+  --bf-flame-amber: #f59e0b;
+  --bf-flame-coral: #ef4444;
+  --bf-flame-soft: #fff7ed;
+  --bf-green: #10b981;
+  --bf-green-soft: #ecfdf5;
+
+  /* Neutral Background & Surface Tones */
+  --bf-bg-page: #f8fafc;
+  --bf-bg-surface: #ffffff;
+  --bf-bg-slate: #f1f5f9;
+  --bf-bg-ice: #f0f7ff;
+  --bf-card-bg: #ffffff;
+  --bf-border: #e2e8f0;
+  --bf-border-light: #f1f5f9;
+  --bf-border-dark: rgba(255, 255, 255, 0.15);
+
+  /* Typography Colors */
+  --bf-text-dark: #091e3a;
+  --bf-text-body: #334155;
+  --bf-text-muted: #64748b;
+  --bf-text-light: #94a3b8;
+  --bf-text-white: #ffffff;
+
+  /* Typography Fonts */
+  --bf-font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --bf-font-script: 'Alex Brush', cursive;
+  --bf-font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* UI Tokens: Border Radius */
+  --bf-radius-xs: 4px;
+  --bf-radius-sm: 8px;
+  --bf-radius-md: 14px;
+  --bf-radius-lg: 20px;
+  --bf-radius-xl: 30px;
+  --bf-radius-pill: 9999px;
+
+  /* Shadows */
+  --bf-shadow-sm: 0 2px 8px rgba(3, 23, 46, 0.06);
+  --bf-shadow-md: 0 8px 24px rgba(3, 23, 46, 0.09);
+  --bf-shadow-lg: 0 16px 40px rgba(3, 23, 46, 0.13);
+  --bf-shadow-xl: 0 24px 60px rgba(3, 23, 46, 0.18);
+  --bf-shadow-flame: 0 8px 30px rgba(0, 210, 255, 0.25);
+  --bf-shadow-warm: 0 8px 30px rgba(255, 107, 53, 0.25);
+
+  /* Transitions */
+  --bf-transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --bf-transition-fast: all 0.15s ease;
+
+  /* Compatibility & Legacy Token Mapping -> Mapped to Clean Corporate HVAC */
+  --font-sans: var(--bf-font-sans);
+  --font-main: var(--bf-font-sans);
+  --color-bg-page: var(--bf-bg-page);
+  --color-text-main: var(--bf-text-dark);
+
+  --electric-salmon: #ff6b35;
+  --electric-salmon-light: #ff8554;
+  --electric-salmon-dark: #ea580c;
+  --electric-salmon-glow: rgba(255, 107, 53, 0.25);
+
+  --rich-blue-midnight: #f8fafc;
+  --rich-blue-navy: #f8fafc;
+  --rich-blue-deep: #f1f5f9;
+  --rich-blue-card: #ffffff;
+  --rich-blue-bright: #0074c6;
+  --rich-blue-electric: #0284c7;
+  --rich-blue-glow: rgba(0, 116, 198, 0.2);
+
+  --vibrant-pink: #f97316;
+  --vibrant-pink-light: #fb923c;
+  --vibrant-pink-glow: rgba(249, 115, 22, 0.25);
+
+  --text-white: #03172e;
+  --text-light: #475569;
+  --text-muted: #64748b;
+  --text-dark: #091e3a;
+  --bg-light: #f8fafc;
+  --bg-white: #ffffff;
+  --border-light: #e2e8f0;
+  --border-card: #e2e8f0;
+
+  --shadow-neon-salmon: 0 4px 16px rgba(255, 107, 53, 0.25);
+  --shadow-neon-pink: 0 4px 16px rgba(249, 115, 22, 0.25);
+  --shadow-neon-blue: 0 4px 16px rgba(0, 116, 198, 0.25);
+
+  --radius-sm: var(--bf-radius-sm);
+  --radius-md: var(--bf-radius-md);
+  --radius-lg: var(--bf-radius-lg);
+  --radius-full: var(--bf-radius-pill);
+  --transition: var(--bf-transition);
+}
+
+/* Base Reset & Global Typography */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--bf-font-sans);
+  scroll-behavior: smooth;
+  color: var(--bf-text-body);
+  background-color: var(--bf-bg-page);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
+}
+
+body {
+  overflow-x: clip;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+  background-color: var(--bf-bg-page);
+  color: var(--bf-text-body);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--bf-transition-fast);
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1560px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}

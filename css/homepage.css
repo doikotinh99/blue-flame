@@ -1,0 +1,804 @@
+/* ==========================================================================
+   BLUE FLAME HEATING & COOLING - HOMEPAGE HERO, CLIMATE SWITCHER & BENTO GRID
+   File: css/homepage.css
+   ========================================================================== */
+
+/* 1. HERO SECTION */
+.bf-hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--bf-navy-dark) 0%, var(--bf-navy) 60%, #08294d 100%);
+  color: #fff;
+  padding: 80px 0 100px;
+  overflow: hidden;
+}
+
+.bf-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.18;
+  mix-blend-mode: luminosity;
+  pointer-events: none;
+}
+
+.bf-hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 210, 255, 0.22) 0%, rgba(2, 132, 199, 0) 70%);
+  top: -100px;
+  right: -100px;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.bf-hero-glow-warm {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.18) 0%, rgba(255, 107, 53, 0) 70%);
+  bottom: -150px;
+  left: 10%;
+  pointer-events: none;
+  filter: blur(50px);
+}
+
+.bf-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.bf-hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.bf-hero-script-tag {
+  font-family: var(--bf-font-script);
+  font-size: 2.2rem;
+  color: var(--bf-cyan);
+  line-height: 1;
+  margin-bottom: 6px;
+  transform: rotate(-2deg);
+  display: inline-block;
+}
+
+.bf-hero-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.bf-hero-title span.highlight-blue {
+  background: linear-gradient(135deg, #38bdf8 0%, #00d2ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bf-hero-title span.highlight-flame {
+  background: linear-gradient(135deg, #ff8c42 0%, #ff5252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bf-hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  max-width: 580px;
+}
+
+.bf-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.bf-hero-trust-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bf-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bf-trust-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--bf-cyan);
+}
+
+.bf-trust-text {
+  font-size: 0.82rem;
+  color: #e2e8f0;
+  line-height: 1.25;
+}
+
+.bf-trust-text strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+/* Direct Dispatch Hub Card (Zero Form / 100% Direct Contact) */
+.bf-hero-dispatch-card, .bf-hero-form-card {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-radius: var(--bf-radius-xl);
+  padding: 32px;
+  color: var(--bf-text-dark);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.bf-dispatch-header {
+  margin-bottom: 18px;
+}
+
+.bf-live-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ecfdf5;
+  color: #059669;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 5px 12px;
+  border-radius: var(--bf-radius-pill);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  margin-bottom: 10px;
+}
+
+.bf-dispatch-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--bf-navy);
+  line-height: 1.2;
+}
+
+.bf-dispatch-subtitle {
+  font-size: 0.88rem;
+  color: var(--bf-text-muted);
+  margin-top: 4px;
+}
+
+.bf-dispatch-call-box {
+  background: linear-gradient(135deg, var(--bf-navy) 0%, var(--bf-navy-surface) 100%);
+  border-radius: var(--bf-radius-lg);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 18px;
+  border: 1px solid rgba(0, 210, 255, 0.25);
+  box-shadow: var(--bf-shadow-md);
+}
+
+.bf-call-box-label {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--bf-cyan);
+  margin-bottom: 8px;
+}
+
+.bf-dispatch-main-phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%);
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 900;
+  padding: 12px 24px;
+  border-radius: var(--bf-radius-pill);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.45);
+  text-decoration: none;
+  width: 100%;
+  transition: var(--bf-transition);
+}
+
+.bf-dispatch-main-phone:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.6);
+  color: #fff;
+}
+
+.bf-call-box-eta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+.bf-call-box-eta strong {
+  color: #fff;
+}
+
+.bf-dispatch-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.bf-channel-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--bf-bg-page);
+  border-radius: var(--bf-radius-md);
+  border: 1px solid var(--bf-border);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.bf-channel-row > div {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.bf-channel-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bf-blue-soft);
+  color: var(--bf-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bf-channel-name {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--bf-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.bf-channel-val {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--bf-navy);
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bf-channel-val:hover {
+  color: var(--bf-blue);
+}
+
+.bf-dispatch-perks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--bf-border);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--bf-text-muted);
+}
+
+.bf-perk-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--bf-navy);
+}
+
+/* 2. INTERACTIVE CLIMATE SWITCHER */
+.bf-climate-section {
+  background: #ffffff;
+  padding: 90px 0;
+  position: relative;
+}
+
+.bf-climate-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.bf-climate-toggle-box {
+  background: var(--bf-bg-slate);
+  padding: 6px;
+  border-radius: var(--bf-radius-pill);
+  display: inline-flex;
+  gap: 8px;
+  border: 1px solid var(--bf-border);
+}
+
+.bf-climate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: var(--bf-radius-pill);
+  font-weight: 800;
+  font-size: 0.95rem;
+  border: none;
+  background: transparent;
+  color: var(--bf-text-muted);
+  cursor: pointer;
+  transition: var(--bf-transition);
+}
+
+.bf-climate-btn.active.btn-heating {
+  background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(249, 115, 22, 0.4);
+}
+
+.bf-climate-btn.active.btn-cooling {
+  background: linear-gradient(135deg, var(--bf-blue) 0%, #00d2ff 100%);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(0, 210, 255, 0.45);
+}
+
+.bf-climate-panel {
+  display: none;
+  animation: bfFadeIn 0.35s ease-in-out;
+}
+
+.bf-climate-panel.active {
+  display: block;
+}
+
+@keyframes bfFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bf-climate-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  background: var(--bf-bg-page);
+  border: 1px solid var(--bf-border);
+  border-radius: var(--bf-radius-xl);
+  padding: 48px;
+}
+
+.bf-climate-media {
+  position: relative;
+  border-radius: var(--bf-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--bf-shadow-lg);
+}
+
+.bf-climate-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  filter: brightness(1.12) contrast(1.06) saturate(1.05);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.bf-climate-media:hover .bf-climate-img {
+  transform: scale(1.03);
+  filter: brightness(1.15) contrast(1.08) saturate(1.08);
+}
+
+.bf-climate-badge-overlay {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: rgba(3, 23, 46, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: var(--bf-radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(0, 210, 255, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.bf-climate-specs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0 30px;
+}
+
+.bf-spec-box {
+  background: #fff;
+  padding: 16px;
+  border-radius: var(--bf-radius-md);
+  border: 1px solid var(--bf-border);
+}
+
+.bf-spec-box-label {
+  font-size: 0.76rem;
+  color: var(--bf-text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.bf-spec-box-val {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--bf-navy);
+  margin-top: 4px;
+}
+
+/* 3. BENTO GRID ARCHITECTURE */
+.bf-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+.bf-bento-card {
+  background: #ffffff;
+  border-radius: var(--bf-radius-xl);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(3, 23, 46, 0.08);
+  padding: 34px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bf-bento-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(3, 23, 46, 0.13);
+  border-color: rgba(2, 132, 199, 0.4);
+}
+
+.bf-bento-col-8 {
+  grid-column: span 8;
+}
+
+.bf-bento-col-4 {
+  grid-column: span 4;
+}
+
+.bf-bento-col-6 {
+  grid-column: span 6;
+}
+
+.bf-bento-col-12 {
+  grid-column: span 12;
+}
+
+.bf-bento-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--bf-radius-md);
+  background: var(--bf-blue-soft);
+  color: var(--bf-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bf-bento-icon-wrap.flame {
+  background: #fff7ed;
+  color: #ff6b35;
+}
+
+.bf-bento-icon-wrap.green {
+  background: var(--bf-green-soft);
+  color: var(--bf-green);
+}
+
+.bf-bento-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--bf-navy);
+  margin-bottom: 12px;
+}
+
+.bf-bento-desc {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.bf-bento-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.bf-bento-tag {
+  background: var(--bf-bg-slate);
+  color: var(--bf-text-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--bf-radius-pill);
+}
+
+/* 4. EMERGENCY DISPATCH CALLOUT */
+.bf-emergency-banner {
+  background: linear-gradient(135deg, #091e3a 0%, #03172e 100%);
+  border-radius: var(--bf-radius-xl);
+  padding: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  box-shadow: var(--bf-shadow-xl);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+.bf-emergency-content {
+  max-width: 650px;
+}
+
+.bf-emergency-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.bf-emergency-title span {
+  color: #ff6b35;
+}
+
+.bf-emergency-desc {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .bf-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .bf-hero-title {
+    font-size: 2.6rem;
+  }
+  .bf-climate-grid {
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+  .bf-bento-col-8, .bf-bento-col-4, .bf-bento-col-6 {
+    grid-column: span 12;
+  }
+  .bf-emergency-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bf-hero {
+    padding: 45px 0 55px;
+  }
+  .bf-hero-script-tag {
+    font-size: 1.7rem;
+  }
+  .bf-hero-title {
+    font-size: clamp(1.48rem, 5.5vw, 1.95rem);
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .bf-hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    overflow-wrap: break-word;
+  }
+  .bf-hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
+  }
+  .bf-hero-content {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .bf-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .bf-hero-actions .bf-btn {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .bf-hero-trust-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .bf-hero-dispatch-card, .bf-hero-form-card {
+    padding: 22px 18px;
+    border-radius: var(--bf-radius-lg);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+  .bf-dispatch-main-phone {
+    font-size: clamp(1.05rem, 4.5vw, 1.35rem);
+    padding: 10px 16px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .bf-form-card-title {
+    font-size: 1.25rem;
+  }
+  .bf-form-control {
+    font-size: 16px !important; /* Ngăn chặn Safari iOS tự động phóng to */
+    padding: 13px 14px;
+  }
+  .bf-climate-section {
+    padding: 50px 0;
+  }
+  .bf-climate-toggle-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: var(--bf-radius-lg);
+  }
+  .bf-climate-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+  .bf-climate-grid {
+    padding: 20px 16px;
+    border-radius: var(--bf-radius-lg);
+    gap: 24px;
+  }
+  .bf-climate-img {
+    height: 230px;
+  }
+  .bf-climate-specs-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 18px 0 24px;
+  }
+  .bf-spec-box {
+    padding: 12px 10px;
+  }
+  .bf-spec-box-val {
+    font-size: 1rem;
+  }
+  .bf-bento-card {
+    padding: 24px 20px;
+    border-radius: var(--bf-radius-lg);
+  }
+  .bf-bento-title {
+    font-size: 1.2rem;
+  }
+  .bf-section {
+    padding: 50px 0;
+  }
+  .bf-section-title {
+    font-size: 1.85rem;
+  }
+  .bf-section-desc {
+    font-size: 0.95rem;
+  }
+  .bf-emergency-banner {
+    padding: 30px 20px;
+    border-radius: var(--bf-radius-lg);
+  }
+  .bf-emergency-title {
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bf-hero-title {
+    font-size: clamp(1.48rem, 6.2vw, 1.85rem);
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  .bf-hero-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.48;
+    overflow-wrap: break-word;
+    margin-bottom: 20px;
+  }
+  .bf-hero-glow, .bf-hero-glow-warm {
+    display: none;
+  }
+  .bf-channel-row {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+  .bf-channel-val {
+    font-size: 0.84rem;
+  }
+  .bf-hero-actions {
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .bf-hero-actions .bf-btn {
+    padding: 12px 16px;
+    font-size: 0.92rem;
+  }
+  .bf-hero-trust-row {
+    gap: 12px;
+  }
+  .bf-climate-specs-list {
+    grid-template-columns: 1fr;
+  }
+  .bf-partner-row {
+    gap: 20px;
+  }
+  .bf-partner-item {
+    height: 28px;
+  }
+  .bf-partner-item img, .bf-partner-item svg {
+    height: 24px;
+  }
+}

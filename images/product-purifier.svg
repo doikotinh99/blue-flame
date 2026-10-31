@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="purbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051329"/>
+      <stop offset="100%" stop-color="#0e2a54"/>
+    </linearGradient>
+    <linearGradient id="uvGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ff1a75"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="16" fill="url(#purbg)"/>
+  <!-- Duct Mounted Air Purifier Body -->
+  <rect x="90" y="70" width="220" height="150" rx="12" fill="#1e293b" stroke="#00e5ff" stroke-width="2.5"/>
+  <!-- UV Lamp Chamber Glow -->
+  <rect x="120" y="95" width="160" height="45" rx="8" fill="#3b0764" stroke="url(#uvGrad)" stroke-width="2"/>
+  <line x1="140" y1="117" x2="260" y2="117" stroke="#c084fc" stroke-width="6" stroke-linecap="round"/>
+  <!-- Air Flow Particles -->
+  <circle cx="150" cy="170" r="4" fill="#00e5ff"/>
+  <circle cx="180" cy="180" r="6" fill="#ff4d30"/>
+  <circle cx="210" cy="165" r="5" fill="#38bdf8"/>
+  <circle cx="245" cy="175" r="4" fill="#ff1a75"/>
+  <!-- Badge -->
+  <rect x="130" y="195" width="140" height="16" rx="4" fill="#ff1a75"/>
+  <text x="200" y="207" fill="#ffffff" font-size="9" font-family="sans-serif" font-weight="bold" text-anchor="middle">HEPA + 254nm UV-C</text>
+  <text x="200" y="265" fill="#ffffff" font-size="12" font-family="sans-serif" font-weight="bold" text-anchor="middle">Whole-House Air Sanitizer</text>
+</svg>
