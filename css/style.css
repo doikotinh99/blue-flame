@@ -3,9 +3,9 @@
    Clean Architecture: Modular Imports & Design Tokens
    ========================================================================== */
 
-@import url('variables.css?v=3.4');
-@import url('header-footer.css?v=3.4');
-@import url('components.css?v=3.4');
-@import url('homepage.css?v=3.4');
-@import url('pages.css?v=3.4');
-@import url('product-detail.css?v=3.4');
+@import url('variables.css?v=3.5');
+@import url('header-footer.css?v=3.5');
+@import url('components.css?v=3.5');
+@import url('homepage.css?v=3.5');
+@import url('pages.css?v=3.5');
+@import url('product-detail.css?v=3.5');
