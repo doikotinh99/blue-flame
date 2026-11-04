@@ -88,16 +88,16 @@
   100% { transform: scale(0.95); opacity: 0.8; }
 }
 
-/* 2. MAIN HEADER (Dark Seamless Theme) */
+/* 2. MAIN HEADER (Clean White Header as in Customer Reference) */
 .bf-header {
-  background: rgba(3, 23, 46, 0.98);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(14px);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid rgba(0, 210, 255, 0.2);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
   transition: var(--bf-transition);
 }
 
@@ -174,15 +174,15 @@
   padding: 8px 12px;
   font-size: 0.92rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--bf-text-dark, #0f172a);
   border-radius: var(--bf-radius-sm);
   transition: var(--bf-transition-fast);
   white-space: nowrap;
 }
 
 .bf-nav-link:hover, .bf-nav-link.active {
-  color: var(--bf-cyan, #00d2ff);
-  background-color: rgba(0, 210, 255, 0.12);
+  color: var(--bf-blue, #0284c7);
+  background-color: var(--bf-blue-soft, #f0f9ff);
 }
 
 .bf-dropdown-icon {
@@ -287,7 +287,7 @@
 
 .bf-phone-label {
   font-size: 0.7rem;
-  color: var(--bf-cyan, #00d2ff);
+  color: var(--bf-text-muted, #64748b);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -297,7 +297,7 @@
 .bf-phone-num {
   font-size: 0.96rem;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--bf-navy, #03172e);
   line-height: 1.1;
   white-space: nowrap;
 }
@@ -333,7 +333,7 @@
   display: none;
   background: transparent;
   border: none;
-  color: #ffffff;
+  color: var(--bf-navy, #03172e);
   cursor: pointer;
   padding: 8px;
   border-radius: var(--bf-radius-sm);
@@ -866,11 +866,11 @@
     letter-spacing: -0.2px;
   }
   .bf-header-container {
-    height: 70px;
+    height: 56px;
   }
   .bf-brand-img {
-    height: 48px;
-    max-width: 200px;
+    height: 38px;
+    max-width: 190px;
   }
   .bf-brand-name {
     font-size: 1.05rem;
@@ -889,19 +889,19 @@
 
 @media (max-width: 640px) {
   .bf-top-bar {
-    padding: 6px 0;
-    font-size: 0.76rem;
+    padding: 3px 0;
+    font-size: 0.72rem;
   }
   .bf-top-bar-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 4px;
+    gap: 2px;
   }
   .bf-top-item {
-    font-size: 0.74rem;
-    line-height: 1.35;
+    font-size: 0.72rem;
+    line-height: 1.25;
     justify-content: center;
     text-align: center;
   }
@@ -912,6 +912,9 @@
 }
 
 @media (max-width: 480px) {
+  .bf-header-container {
+    height: 52px;
+  }
   .bf-mobile-bottom-bar {
     padding: 7px 8px;
     padding-bottom: max(7px, env(safe-area-inset-bottom, 7px));
@@ -935,8 +938,8 @@
     font-size: 0.78rem;
   }
   .bf-brand-img {
-    height: 44px;
-    max-width: 185px;
+    height: 36px;
+    max-width: 175px;
   }
   .bf-brand-name {
     font-size: 0.98rem;

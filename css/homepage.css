@@ -1101,20 +1101,18 @@
   }
   .bf-hero-grid, .bf-hero-grid-custom {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 20px;
   }
   .bf-hero-content {
     align-items: center;
     text-align: center;
   }
   .bf-hero-overtime-pill {
-    margin: 0 auto 14px auto;
+    margin: 0 auto 10px auto;
   }
   .bf-hero-pricing-guarantee {
-    margin: 0 auto 16px auto;
-    border-left: none;
-    border-bottom: 2px solid var(--bf-flame-warm, #ff6b35);
-    border-radius: 0 0 10px 10px;
+    margin: 0 auto 12px auto;
+    border: none;
     justify-content: center;
     text-align: center;
   }
@@ -1122,13 +1120,15 @@
     align-items: center;
   }
   .bf-hero-google-capsule {
-    margin: 0 auto 20px auto;
+    margin: 0 auto 12px auto;
     width: 100%;
-    padding: 14px 18px 16px;
+    max-width: 440px;
+    padding: 12px 18px 14px;
   }
   .bf-hero-explore-row {
     justify-content: center;
     width: 100%;
+    margin-bottom: 12px;
   }
   .bf-btn-explore-systems, .bf-btn-quick-call {
     width: 100%;
@@ -1138,26 +1138,30 @@
     order: 2;
     width: 100%;
   }
+  .bf-hero-centerpiece-wrap {
+    margin-top: 6px;
+    margin-bottom: 18px;
+  }
   .bf-hero-seo-copy {
     order: 3;
-    margin-top: 24px;
+    margin-top: 20px;
   }
   .bf-centerpiece-book-badge {
-    left: 5px;
-    top: 25%;
-    width: 58px;
-    height: 58px;
-    font-size: 0.65rem;
+    left: 15px;
+    top: 20%;
+    width: 52px;
+    height: 52px;
+    font-size: 0.62rem;
   }
   .bf-hero-3d-logo {
-    max-width: 310px;
+    max-width: 260px;
   }
   .bf-centerpiece-phone-pill {
-    font-size: 1.18rem;
-    padding: 10px 24px;
+    font-size: 1.15rem;
+    padding: 9px 24px;
   }
   .bf-hero-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
   .bf-climate-grid {
     grid-template-columns: 1fr;
@@ -1222,23 +1226,105 @@
     font-size: 0.66rem;
   }
   .bf-hero {
-    padding: 45px 0 55px;
+    padding: 20px 0 35px;
+  }
+  .bf-hero-overtime-pill {
+    padding: 6px 14px 6px 16px;
+    margin: 0 auto 8px auto;
+  }
+  .bf-overtime-text {
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+  }
+  .bf-piggy-illustration svg {
+    width: 34px;
+    height: 28px;
+  }
+  .bf-hero-pricing-guarantee {
+    gap: 10px;
+    margin: 0 auto 10px auto;
+    padding: 2px 0;
+  }
+  .bf-moneybag-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  .bf-pricing-title {
+    font-size: 1.28rem;
+  }
+  .bf-pricing-subtitle {
+    font-size: 0.92rem;
+  }
+  .bf-hero-google-capsule {
+    padding: 10px 14px 12px;
+    margin: 0 auto 10px auto;
+    max-width: 400px;
+    border-radius: 32px;
+  }
+  .bf-gc-row-top {
+    font-size: 0.85rem;
+  }
+  .bf-gc-brand {
+    font-size: 0.96rem;
+  }
+  .bf-gc-highlight {
+    font-size: 0.88rem;
+  }
+  .bf-hero-explore-row {
+    margin-bottom: 10px;
+  }
+  .bf-btn-explore-systems {
+    font-size: 0.98rem;
+    padding: 10px 28px;
+  }
+  .bf-hero-centerpiece-wrap {
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  .bf-hero-3d-logo {
+    max-width: 220px;
+    margin-bottom: -10px;
+  }
+  .bf-centerpiece-book-badge {
+    left: 20px;
+    top: 18%;
+    width: 48px;
+    height: 48px;
+    font-size: 0.58rem;
+    border-width: 2px;
+  }
+  .bf-centerpiece-phone-pill {
+    font-size: 1.05rem;
+    padding: 8px 22px;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .bf-centerpiece-phone-pill svg {
+    width: 18px;
+    height: 18px;
+  }
+  .bf-centerpiece-domain-link {
+    font-size: 0.84rem;
+    margin-top: 4px;
+  }
+  .bf-hero-seo-copy {
+    margin-top: 16px;
   }
   .bf-hero-script-tag {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .bf-hero-title {
-    font-size: clamp(1.48rem, 5.5vw, 1.95rem);
+    font-size: clamp(1.4rem, 5.5vw, 1.85rem);
     line-height: 1.2;
     letter-spacing: -0.5px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     overflow-wrap: break-word;
     word-break: break-word;
   }
   .bf-hero-subtitle {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 24px;
+    font-size: 0.9rem;
+    line-height: 1.48;
+    margin-bottom: 20px;
     overflow-wrap: break-word;
   }
   .bf-hero-grid {
@@ -1415,6 +1501,91 @@
 }
 
 @media (max-width: 480px) {
+  .bf-hero {
+    padding: 14px 0 26px;
+  }
+  .bf-hero-overtime-pill {
+    padding: 5px 12px 5px 14px;
+    margin: 0 auto 6px auto;
+  }
+  .bf-overtime-text {
+    font-size: 0.74rem;
+    letter-spacing: 0.4px;
+  }
+  .bf-piggy-illustration svg {
+    width: 28px;
+    height: 24px;
+  }
+  .bf-hero-pricing-guarantee {
+    gap: 8px;
+    margin: 0 auto 8px auto;
+  }
+  .bf-moneybag-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+  .bf-pricing-title {
+    font-size: 1.18rem;
+  }
+  .bf-pricing-subtitle {
+    font-size: 0.86rem;
+  }
+  .bf-hero-google-capsule {
+    padding: 8px 12px 10px;
+    border-radius: 26px;
+    margin: 0 auto 8px auto;
+    max-width: 360px;
+  }
+  .bf-gc-row-top {
+    font-size: 0.8rem;
+    gap: 4px;
+  }
+  .bf-google-wordmark {
+    font-size: 0.88rem;
+  }
+  .bf-gc-brand {
+    font-size: 0.9rem;
+    margin: 2px 0;
+  }
+  .bf-gc-highlight {
+    font-size: 0.82rem;
+  }
+  .bf-hero-explore-row {
+    margin-bottom: 8px;
+  }
+  .bf-btn-explore-systems {
+    font-size: 0.92rem;
+    padding: 9px 24px;
+  }
+  .bf-hero-centerpiece-wrap {
+    margin-top: 2px;
+    margin-bottom: 12px;
+  }
+  .bf-hero-3d-logo {
+    max-width: 205px;
+    margin-bottom: -8px;
+  }
+  .bf-centerpiece-book-badge {
+    left: 12px;
+    top: 15%;
+    width: 44px;
+    height: 44px;
+    font-size: 0.54rem;
+  }
+  .bf-centerpiece-phone-pill {
+    font-size: 0.98rem;
+    padding: 7px 20px;
+    gap: 6px;
+    margin-top: 3px;
+  }
+  .bf-centerpiece-phone-pill svg {
+    width: 16px;
+    height: 16px;
+  }
+  .bf-centerpiece-domain-link {
+    font-size: 0.8rem;
+    margin-top: 3px;
+  }
   .bf-hero-google-badge {
     padding: 4px 10px 4px 6px;
     gap: 6px;
@@ -1508,5 +1679,45 @@
   }
   .bf-partner-item img, .bf-partner-item svg {
     height: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .bf-hero {
+    padding: 10px 0 20px;
+  }
+  .bf-overtime-text {
+    font-size: 0.68rem;
+  }
+  .bf-pricing-title {
+    font-size: 1.1rem;
+  }
+  .bf-pricing-subtitle {
+    font-size: 0.78rem;
+  }
+  .bf-hero-google-capsule {
+    padding: 7px 10px 8px;
+    border-radius: 22px;
+    max-width: 320px;
+  }
+  .bf-gc-brand {
+    font-size: 0.84rem;
+  }
+  .bf-gc-highlight {
+    font-size: 0.76rem;
+  }
+  .bf-hero-3d-logo {
+    max-width: 185px;
+  }
+  .bf-centerpiece-book-badge {
+    left: 8px;
+    top: 14%;
+    width: 38px;
+    height: 38px;
+    font-size: 0.48rem;
+  }
+  .bf-centerpiece-phone-pill {
+    font-size: 0.9rem;
+    padding: 6px 16px;
   }
 }
