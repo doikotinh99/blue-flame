@@ -103,6 +103,15 @@
   animation: bfFloat 3s ease-in-out infinite;
 }
 
+.bf-piggy-img {
+  height: 36px;
+  width: auto;
+  max-width: 44px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+}
+
 @keyframes bfFloat {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-3px); }
@@ -1217,6 +1226,10 @@
     width: 34px;
     height: 28px;
   }
+  .bf-piggy-img {
+    height: 30px;
+    max-width: 38px;
+  }
   .bf-hero-pricing-guarantee {
     gap: 10px;
     margin: 0 auto 10px auto;
@@ -1491,6 +1504,10 @@
     width: 28px;
     height: 24px;
   }
+  .bf-piggy-img {
+    height: 26px;
+    max-width: 32px;
+  }
   .bf-hero-pricing-guarantee {
     gap: 8px;
     margin: 0 auto 8px auto;
@@ -1657,6 +1674,10 @@
   }
   .bf-overtime-text {
     font-size: 0.68rem;
+  }
+  .bf-piggy-img {
+    height: 24px;
+    max-width: 28px;
   }
   .bf-pricing-title {
     font-size: 1.1rem;
