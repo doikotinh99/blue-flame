@@ -1097,6 +1097,105 @@
   line-height: 1.3;
 }
 
+/* =========================================================================
+   DESKTOP HERO OPTIMIZATION (Balanced 2-Column Split Layout for Screens >= 992px)
+   Keeps Mobile 100% Intact in @media (max-width: 992px) below
+   ========================================================================= */
+@media (min-width: 992px) {
+  .bf-hero {
+    padding: 48px 0 60px;
+  }
+
+  .bf-hero-content {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-areas:
+      "overtime  emblem"
+      "pricing   emblem"
+      "google    emblem"
+      "seo       emblem";
+    column-gap: 48px;
+    row-gap: 12px;
+    align-items: center;
+  }
+
+  .bf-hero-overtime-pill {
+    grid-area: overtime;
+    margin-bottom: 0;
+  }
+
+  .bf-hero-pricing-guarantee {
+    grid-area: pricing;
+    margin-bottom: 0;
+  }
+
+  .bf-hero-google-capsule {
+    grid-area: google;
+    margin: 0;
+    max-width: 480px;
+  }
+
+  .bf-hero-seo-copy {
+    grid-area: seo;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  .bf-hero-title {
+    font-size: 2.35rem;
+    line-height: 1.18;
+    margin-bottom: 12px;
+    letter-spacing: -0.8px;
+  }
+
+  .bf-hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+
+  .bf-hero-centerpiece-wrap {
+    grid-area: emblem;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bf-centerpiece-container {
+    max-width: 380px;
+  }
+
+  .bf-hero-3d-logo {
+    max-width: 330px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bf-hero-content {
+    column-gap: 60px;
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .bf-hero-title {
+    font-size: 2.6rem;
+  }
+
+  .bf-hero-google-capsule {
+    max-width: 520px;
+  }
+
+  .bf-centerpiece-container {
+    max-width: 410px;
+  }
+
+  .bf-hero-3d-logo {
+    max-width: 350px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 992px) {
   .bf-trust-ribbon {
@@ -1112,6 +1211,8 @@
     gap: 20px;
   }
   .bf-hero-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
