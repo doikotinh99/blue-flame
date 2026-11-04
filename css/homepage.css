@@ -117,16 +117,33 @@
   50% { transform: translateY(-3px); }
 }
 
-/* 2. Service Call Fees + Money Bag (White + Lavender/Purple) */
+/* 2. Service Call Fees + Money Bag (White + Lavender/Purple - 1 Row Title) */
 .bf-hero-pricing-guarantee {
   display: flex;
-  align-items: center;
-  gap: 14px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
   margin-bottom: 18px;
   background: transparent;
   padding: 4px 0;
   width: fit-content;
   max-width: 100%;
+}
+
+.bf-pricing-title-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bf-moneybag-img {
+  height: 32px;
+  width: auto;
+  max-width: 38px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 8px rgba(34, 197, 94, 0.4));
 }
 
 .bf-moneybag-icon {
@@ -153,7 +170,7 @@
   font-weight: 700;
   color: #c4b5fd;
   text-shadow: 0 0 12px rgba(196, 181, 253, 0.4);
-  margin: 3px 0 0 0;
+  margin: 0;
   line-height: 1.3;
 }
 
@@ -1104,8 +1121,11 @@
   .bf-hero-pricing-guarantee {
     margin: 0 auto 12px auto;
     border: none;
-    justify-content: center;
+    align-items: center;
     text-align: center;
+  }
+  .bf-pricing-title-row {
+    justify-content: center;
   }
   .bf-pricing-text-wrap {
     align-items: center;
@@ -1231,13 +1251,17 @@
     max-width: 38px;
   }
   .bf-hero-pricing-guarantee {
-    gap: 10px;
+    gap: 4px;
     margin: 0 auto 10px auto;
     padding: 2px 0;
   }
-  .bf-moneybag-icon svg {
-    width: 30px;
-    height: 30px;
+  .bf-pricing-title-row {
+    gap: 8px;
+    justify-content: center;
+  }
+  .bf-moneybag-img {
+    height: 26px;
+    max-width: 32px;
   }
   .bf-pricing-title {
     font-size: 1.28rem;
@@ -1509,12 +1533,15 @@
     max-width: 32px;
   }
   .bf-hero-pricing-guarantee {
-    gap: 8px;
+    gap: 3px;
     margin: 0 auto 8px auto;
   }
-  .bf-moneybag-icon svg {
-    width: 26px;
-    height: 26px;
+  .bf-pricing-title-row {
+    gap: 7px;
+  }
+  .bf-moneybag-img {
+    height: 24px;
+    max-width: 28px;
   }
   .bf-pricing-title {
     font-size: 1.18rem;
@@ -1679,8 +1706,12 @@
     height: 24px;
     max-width: 28px;
   }
+  .bf-moneybag-img {
+    height: 22px;
+    max-width: 26px;
+  }
   .bf-pricing-title {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
   }
   .bf-pricing-subtitle {
     font-size: 0.78rem;
