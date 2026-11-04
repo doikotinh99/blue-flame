@@ -3,6 +3,28 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Dynamic Header: Dark matching Banner at Top -> White on Scroll
+  const header = document.querySelector('.bf-header');
+  if (header) {
+    const singleBrandImg = header.querySelector('.bf-brand-img:not(.bf-brand-img-white):not(.bf-brand-img-dark)');
+    const updateHeaderScroll = () => {
+      const isScrolled = window.scrollY > 30;
+      if (isScrolled) {
+        header.classList.add('bf-header--scrolled');
+        if (singleBrandImg && singleBrandImg.src.includes('blueflameheatingcooling-white.png')) {
+          singleBrandImg.src = singleBrandImg.src.replace('blueflameheatingcooling-white.png', 'blueflameheatingcooling.png');
+        }
+      } else {
+        header.classList.remove('bf-header--scrolled');
+        if (singleBrandImg && singleBrandImg.src.includes('blueflameheatingcooling.png') && !singleBrandImg.src.includes('-white')) {
+          singleBrandImg.src = singleBrandImg.src.replace('blueflameheatingcooling.png', 'blueflameheatingcooling-white.png');
+        }
+      }
+    };
+    window.addEventListener('scroll', updateHeaderScroll, { passive: true });
+    updateHeaderScroll();
+  }
+
   // 1. Mobile Drawer Toggle
   const mobileToggle = document.getElementById('bfMobileToggle');
   const mobileDrawer = document.getElementById('bfMobileDrawer');
