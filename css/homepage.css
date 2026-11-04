@@ -146,20 +146,20 @@
 
 /* 3. Google 5.0 Rating Capsule (Exact Pink/Salmon Box as Requested by Client) */
 .bf-hero-google-capsule {
-  background: linear-gradient(135deg, #ff8289 0%, #ff6e78 100%);
-  border: 2px solid #ffa4ab;
-  box-shadow: 0 12px 32px rgba(255, 110, 120, 0.38), 0 0 20px rgba(255, 130, 140, 0.25);
+  background: #ff9999;
+  border: 2px solid #ffaeb4;
+  box-shadow: 0 10px 30px rgba(255, 120, 130, 0.35);
   border-radius: 46px;
   padding: 14px 24px 16px;
   text-align: center;
-  max-width: 480px;
+  max-width: 520px;
   margin-bottom: 18px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .bf-hero-google-capsule:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 40px rgba(255, 110, 120, 0.5);
+  box-shadow: 0 14px 38px rgba(255, 120, 130, 0.45);
 }
 
 .bf-gc-row-top {
@@ -168,38 +168,40 @@
   justify-content: center;
   gap: 6px;
   flex-wrap: wrap;
-  font-size: 0.92rem;
-  font-weight: 800;
-  color: #0f172a;
-  margin-bottom: 3px;
+  font-family: Georgia, 'Playfair Display', 'Times New Roman', serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
 
-.bf-google-wordmark {
-  font-weight: 900;
+.bf-gc-google-wrap {
+  display: inline-flex;
+  align-items: center;
   letter-spacing: 0.5px;
-  font-size: 1rem;
-}
-
-.bf-gc-stars {
-  color: #f59e0b;
-  font-size: 0.95rem;
-  letter-spacing: 1.5px;
+  font-weight: 800;
 }
 
 .bf-gc-brand {
-  font-size: 1.05rem;
-  font-weight: 900;
-  color: #003875;
-  margin: 3px 0;
+  font-family: Georgia, 'Playfair Display', 'Times New Roman', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0070c0;
+  margin: 4px 0;
   letter-spacing: -0.2px;
+  line-height: 1.25;
 }
 
 .bf-gc-highlight {
-  font-size: 0.96rem;
-  font-weight: 900;
-  color: #800000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-family: Georgia, 'Playfair Display', 'Times New Roman', serif;
+  font-size: 1.08rem;
+  font-weight: 700;
   line-height: 1.35;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
 }
 
 /* 4. Explore Systems Button (Orange) */
@@ -1262,13 +1264,16 @@
     border-radius: 32px;
   }
   .bf-gc-row-top {
-    font-size: 0.85rem;
+    font-size: 0.94rem;
+    gap: 4px;
   }
   .bf-gc-brand {
-    font-size: 0.96rem;
+    font-size: 1.15rem;
+    margin: 3px 0;
   }
   .bf-gc-highlight {
-    font-size: 0.88rem;
+    font-size: 0.94rem;
+    gap: 4px;
   }
   .bf-hero-explore-row {
     margin-bottom: 10px;
@@ -1537,18 +1542,16 @@
     max-width: 360px;
   }
   .bf-gc-row-top {
-    font-size: 0.8rem;
-    gap: 4px;
-  }
-  .bf-google-wordmark {
-    font-size: 0.88rem;
+    font-size: 0.84rem;
+    gap: 3px;
   }
   .bf-gc-brand {
-    font-size: 0.9rem;
+    font-size: 1.02rem;
     margin: 2px 0;
   }
   .bf-gc-highlight {
-    font-size: 0.82rem;
+    font-size: 0.84rem;
+    gap: 3px;
   }
   .bf-hero-explore-row {
     margin-bottom: 8px;
@@ -1700,11 +1703,17 @@
     border-radius: 22px;
     max-width: 320px;
   }
+  .bf-gc-row-top {
+    font-size: 0.74rem;
+    gap: 2px;
+  }
   .bf-gc-brand {
-    font-size: 0.84rem;
+    font-size: 0.88rem;
+    margin: 2px 0;
   }
   .bf-gc-highlight {
-    font-size: 0.76rem;
+    font-size: 0.74rem;
+    gap: 2px;
   }
   .bf-hero-3d-logo {
     max-width: 185px;
