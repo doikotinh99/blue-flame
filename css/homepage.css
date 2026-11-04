@@ -68,15 +68,15 @@
    CUSTOMER-REQUESTED HERO LAYOUT (PRESERVING BLUE FLAME DESIGN TOKENS)
    ========================================================================== */
 
-/* 1. No Overtime Rates Banner + Piggy Bank */
+/* 1. No Overtime Rates Banner + Piggy Bank (Wine Red Pill) */
 .bf-hero-overtime-pill {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: rgba(7, 34, 66, 0.85);
+  background: rgba(90, 16, 30, 0.55);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 210, 255, 0.35);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 120, 140, 0.45);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
   padding: 8px 18px 8px 20px;
   border-radius: 999px;
   margin-bottom: 16px;
@@ -86,9 +86,9 @@
 
 .bf-overtime-text {
   font-weight: 800;
-  font-size: 0.86rem;
+  font-size: 0.88rem;
   letter-spacing: 0.8px;
-  color: #ffffff;
+  color: #ff9e99;
   text-transform: uppercase;
 }
 
@@ -104,23 +104,21 @@
   50% { transform: translateY(-3px); }
 }
 
-/* 2. Service Call Fees + Money Bag */
+/* 2. Service Call Fees + Money Bag (White + Lavender/Purple) */
 .bf-hero-pricing-guarantee {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 16px;
-  background: rgba(3, 23, 46, 0.45);
-  border-left: 3px solid var(--bf-flame-warm, #ff6b35);
-  padding: 6px 14px;
-  border-radius: 0 10px 10px 0;
+  margin-bottom: 18px;
+  background: transparent;
+  padding: 4px 0;
   width: fit-content;
   max-width: 100%;
 }
 
 .bf-moneybag-icon {
   flex-shrink: 0;
-  filter: drop-shadow(0 4px 10px rgba(245, 158, 11, 0.45));
+  filter: drop-shadow(0 4px 10px rgba(245, 158, 11, 0.5));
 }
 
 .bf-pricing-text-wrap {
@@ -129,7 +127,7 @@
 }
 
 .bf-pricing-title {
-  font-size: 1.45rem;
+  font-size: 1.55rem;
   font-weight: 900;
   color: #ffffff;
   line-height: 1.2;
@@ -138,48 +136,48 @@
 }
 
 .bf-pricing-subtitle {
-  font-size: 0.98rem;
-  font-weight: 600;
-  color: var(--bf-flame-blue, #38bdf8);
-  margin: 2px 0 0 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #c4b5fd;
+  text-shadow: 0 0 12px rgba(196, 181, 253, 0.4);
+  margin: 3px 0 0 0;
   line-height: 1.3;
 }
 
-/* 3. Google 5.0 Rating Capsule (Pearl-Ice Card) */
+/* 3. Google 5.0 Rating Capsule (Exact Pink/Salmon Box as Requested by Client) */
 .bf-hero-google-capsule {
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(16px);
-  border: 2px solid rgba(0, 210, 255, 0.55);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35), 0 0 24px rgba(0, 210, 255, 0.25);
+  background: linear-gradient(135deg, #ff8289 0%, #ff6e78 100%);
+  border: 2px solid #ffa4ab;
+  box-shadow: 0 12px 32px rgba(255, 110, 120, 0.38), 0 0 20px rgba(255, 130, 140, 0.25);
   border-radius: 46px;
-  padding: 16px 26px 18px;
+  padding: 14px 24px 16px;
   text-align: center;
   max-width: 480px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .bf-hero-google-capsule:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 0 32px rgba(0, 210, 255, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(255, 110, 120, 0.5);
 }
 
 .bf-gc-row-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin-bottom: 4px;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 3px;
 }
 
 .bf-google-wordmark {
   font-weight: 900;
   letter-spacing: 0.5px;
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
 .bf-gc-stars {
@@ -190,27 +188,27 @@
 
 .bf-gc-brand {
   font-size: 1.05rem;
-  font-weight: 800;
-  color: var(--bf-navy-dark, #020c18);
-  margin: 3px 0 4px;
+  font-weight: 900;
+  color: #003875;
+  margin: 3px 0;
   letter-spacing: -0.2px;
 }
 
 .bf-gc-highlight {
-  font-size: 0.94rem;
-  font-weight: 800;
-  color: var(--bf-flame-orange, #f97316);
+  font-size: 0.96rem;
+  font-weight: 900;
+  color: #800000;
   line-height: 1.35;
   letter-spacing: 0.2px;
 }
 
-/* 4. Explore Systems & Direct Actions */
+/* 4. Explore Systems Button (Orange) */
 .bf-hero-explore-row {
   display: flex;
   align-items: center;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
 }
 
 .bf-btn-explore-systems {
@@ -218,80 +216,70 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%);
+  background: linear-gradient(90deg, #ff5e3a 0%, #ff7a45 100%);
   color: #ffffff;
-  font-size: 1.06rem;
+  font-size: 1.12rem;
   font-weight: 800;
-  padding: 13px 28px;
+  padding: 13px 36px;
   border-radius: 999px;
   text-decoration: none;
-  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45);
+  box-shadow: 0 6px 22px rgba(255, 94, 58, 0.5);
   transition: all 0.25s ease;
 }
 
 .bf-btn-explore-systems:hover {
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  background: linear-gradient(90deg, #ff451a 0%, #ff6b33 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(249, 115, 22, 0.6);
+  box-shadow: 0 10px 28px rgba(255, 94, 58, 0.65);
   color: #ffffff;
 }
 
-.bf-btn-quick-call {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-  color: #ffffff;
-  font-size: 1.02rem;
-  font-weight: 800;
-  padding: 13px 24px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-.bf-btn-quick-call:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: var(--bf-cyan, #00d2ff);
-  color: var(--bf-cyan, #00d2ff);
-  transform: translateY(-2px);
-}
-
-/* 5. Centerpiece Showcase Card (Glowing Blue Flame Neon Leaf) */
-.bf-hero-centerpiece-column {
+/* 5. Centerpiece Showcase (Directly below Google Box) */
+.bf-hero-centerpiece-wrap {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 24px;
 }
 
-.bf-hero-centerpiece-card {
+.bf-centerpiece-container {
   position: relative;
-  background: linear-gradient(145deg, rgba(7, 34, 66, 0.88) 0%, rgba(3, 23, 46, 0.94) 100%);
-  backdrop-filter: blur(20px);
-  border: 2px solid rgba(0, 210, 255, 0.35);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 210, 255, 0.2);
-  border-radius: 32px;
-  padding: 40px 32px 30px;
-  text-align: center;
-  width: 100%;
-  max-width: 440px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+/* The Authentic 3D Blue Flame Emblem Logo */
+.bf-hero-3d-logo {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 28px rgba(0, 210, 255, 0.65));
+  margin-bottom: -15px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.bf-hero-3d-logo:hover {
+  transform: scale(1.02);
 }
 
 /* Book Online Floating Seal Badge */
 .bf-centerpiece-book-badge {
   position: absolute;
-  top: -16px;
-  left: 20px;
+  top: 32%;
+  left: -10px;
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #70c42b 0%, #469a10 100%);
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -303,102 +291,63 @@
   text-transform: uppercase;
   text-decoration: none;
   border: 3px solid #ffffff;
-  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.5);
+  box-shadow: 0 6px 18px rgba(70, 154, 16, 0.55);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   z-index: 5;
 }
 
 .bf-centerpiece-book-badge:hover {
   transform: scale(1.1) rotate(6deg);
-  box-shadow: 0 10px 24px rgba(16, 185, 129, 0.7);
+  box-shadow: 0 10px 24px rgba(70, 154, 16, 0.75);
 }
 
-.bf-centerpiece-emblem {
-  margin-bottom: 14px;
-  filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.45));
-}
-
-.bf-centerpiece-title {
-  font-size: 2.1rem;
-  font-weight: 900;
-  letter-spacing: 2px;
-  color: #ffffff;
-  margin: 0;
-  line-height: 1.1;
-  text-shadow: 0 0 18px rgba(0, 210, 255, 0.7);
-}
-
-.bf-centerpiece-tagline {
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 4px;
-  color: var(--bf-cyan, #00d2ff);
-  margin-top: 6px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.bf-centerpiece-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  max-width: 320px;
-  margin-bottom: 18px;
-}
-
+/* Phone Hotline Pill */
 .bf-centerpiece-phone-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  background: linear-gradient(135deg, #0284c7 0%, #0074c6 100%);
+  gap: 12px;
+  background: linear-gradient(180deg, #0284c7 0%, #004e92 100%);
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   font-weight: 900;
   letter-spacing: 0.5px;
-  padding: 12px 24px;
+  padding: 12px 32px;
   border-radius: 999px;
-  border: 1px solid rgba(0, 210, 255, 0.4);
-  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.4);
+  border: 2px solid #00d2ff;
+  box-shadow: 0 0 22px rgba(0, 210, 255, 0.65), inset 0 2px 4px rgba(255, 255, 255, 0.3);
   text-decoration: none;
   transition: all 0.25s ease;
+  position: relative;
+  z-index: 3;
+  margin-top: 5px;
 }
 
 .bf-centerpiece-phone-pill:hover {
-  background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+  background: linear-gradient(180deg, #0396e0 0%, #005bb0 100%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 210, 255, 0.55);
+  box-shadow: 0 0 30px rgba(0, 210, 255, 0.9);
   color: #ffffff;
 }
 
+/* Domain Link */
 .bf-centerpiece-domain-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.85rem;
-  font-weight: 600;
+  color: #00d2ff;
+  font-size: 0.95rem;
+  font-weight: 700;
   text-decoration: none;
+  margin-top: 10px;
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
   transition: all 0.2s ease;
 }
 
 .bf-centerpiece-domain-link:hover {
-  color: var(--bf-cyan, #00d2ff);
-}
-
-.bf-centerpiece-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(16, 185, 129, 0.12);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  color: #a7f3d0;
-  font-size: 0.76rem;
-  font-weight: 700;
-  padding: 5px 14px;
-  border-radius: 999px;
+  color: #ffffff;
+  text-shadow: 0 0 14px rgba(0, 210, 255, 0.8);
 }
 
 /* Hero Google Official Review Micro-Badge (PA 1A) */
@@ -1194,10 +1143,18 @@
     margin-top: 24px;
   }
   .bf-centerpiece-book-badge {
-    left: 10px;
+    left: 5px;
+    top: 25%;
     width: 58px;
     height: 58px;
     font-size: 0.65rem;
+  }
+  .bf-hero-3d-logo {
+    max-width: 310px;
+  }
+  .bf-centerpiece-phone-pill {
+    font-size: 1.18rem;
+    padding: 10px 24px;
   }
   .bf-hero-title {
     font-size: 2.4rem;
