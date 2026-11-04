@@ -215,45 +215,13 @@
   letter-spacing: 0.1px;
 }
 
-/* 4. Explore Systems Button (Orange) */
-.bf-hero-explore-row {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-
-.bf-btn-explore-systems {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background: linear-gradient(90deg, #ff5e3a 0%, #ff7a45 100%);
-  color: #ffffff;
-  font-size: 1.12rem;
-  font-weight: 800;
-  padding: 13px 36px;
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 6px 22px rgba(255, 94, 58, 0.5);
-  transition: all 0.25s ease;
-}
-
-.bf-btn-explore-systems:hover {
-  background: linear-gradient(90deg, #ff451a 0%, #ff6b33 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(255, 94, 58, 0.65);
-  color: #ffffff;
-}
-
-/* 5. Centerpiece Showcase (Directly below Google Box) */
+/* 4. Centerpiece Showcase (Directly below Google Box) */
 .bf-hero-centerpiece-wrap {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 6px;
   margin-bottom: 24px;
 }
 
@@ -1138,12 +1106,7 @@
     max-width: 440px;
     padding: 12px 18px 14px;
   }
-  .bf-hero-explore-row {
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 12px;
-  }
-  .bf-btn-explore-systems, .bf-btn-quick-call {
+  .bf-btn-quick-call {
     width: 100%;
     max-width: 320px;
   }
@@ -1287,13 +1250,7 @@
     font-size: 0.92rem;
     gap: 4px;
   }
-  .bf-hero-explore-row {
-    margin-bottom: 10px;
-  }
-  .bf-btn-explore-systems {
-    font-size: 0.98rem;
-    padding: 10px 28px;
-  }
+
   .bf-hero-centerpiece-wrap {
     margin-top: 4px;
     margin-bottom: 16px;
@@ -1567,13 +1524,7 @@
     font-size: 0.82rem;
     gap: 3px;
   }
-  .bf-hero-explore-row {
-    margin-bottom: 8px;
-  }
-  .bf-btn-explore-systems {
-    font-size: 0.92rem;
-    padding: 9px 24px;
-  }
+
   .bf-hero-centerpiece-wrap {
     margin-top: 2px;
     margin-bottom: 12px;
