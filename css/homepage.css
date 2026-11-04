@@ -174,74 +174,220 @@
   line-height: 1.3;
 }
 
-/* 3. Google 5.0 Rating Capsule (Exact Pink/Salmon Box as Requested by Client - 100% Solid, Zero Opacity) */
+.bf-pricing-desc {
+  font-size: 0.96rem;
+  color: #94a3b8;
+  margin: 6px 0 0 0;
+  line-height: 1.45;
+  font-weight: 500;
+  max-width: 480px;
+}
+
+/* 3. Google 5.0 Rating Capsule (The 3rd Banner Box - Premium Glassmorphism) */
 .bf-hero-google-capsule {
   position: relative;
-  z-index: 20;
-  isolation: isolate;
-  background: #ff9999 !important;
-  background-color: #ff9999 !important;
-  opacity: 1 !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: 2px solid #ffaeb4;
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
-  border-radius: 46px;
-  padding: 14px 24px 16px;
+  z-index: 5;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.72) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 13px 22px 14px;
   text-align: center;
-  max-width: 520px;
-  margin-bottom: 18px;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 20px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .bf-hero-google-capsule:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.45);
+  border-color: rgba(56, 189, 248, 0.4);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.48), 0 0 24px rgba(56, 189, 248, 0.16);
 }
 
 .bf-gc-row-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
   flex-wrap: wrap;
-  font-family: Georgia, 'Playfair Display', 'Times New Roman', serif;
-  font-size: 1.08rem;
-  font-weight: 700;
-  margin-bottom: 4px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-bottom: 5px;
 }
 
-.bf-gc-google-wrap {
+.bf-gc-google-badge {
   display: inline-flex;
   align-items: center;
-  letter-spacing: 0.5px;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+
+.bf-gc-google-icon {
+  display: block;
+  flex-shrink: 0;
+}
+
+.bf-google-wordmark {
   font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: -0.2px;
+}
+
+.bf-gc-rating-tag {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.bf-gc-stars {
+  color: #f59e0b;
+  font-size: 0.98rem;
+  letter-spacing: 2px;
 }
 
 .bf-gc-brand {
-  font-family: Georgia, 'Playfair Display', 'Times New Roman', serif;
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: #0070c0;
-  margin: 4px 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 4px 0 3px;
   letter-spacing: -0.2px;
   line-height: 1.25;
 }
 
 .bf-gc-highlight {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  flex-wrap: wrap;
-  font-family: Georgia, 'Playfair Display', 'Times New Roman', serif;
-  font-size: 1.08rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.92rem;
   font-weight: 700;
-  line-height: 1.35;
+  color: #38bdf8;
   letter-spacing: 0.1px;
 }
 
-/* 4. Centerpiece Showcase (Directly below Google Box) */
+/* 4. CTA Action Buttons (Customer Visual Flow) */
+.bf-hero-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.bf-btn-explore-systems {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #ff5e3a 0%, #ff7a45 100%);
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  padding: 13px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 6px 22px rgba(255, 94, 58, 0.45);
+  transition: all 0.25s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bf-btn-explore-systems:hover {
+  background: linear-gradient(90deg, #ff451a 0%, #ff6b33 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(255, 94, 58, 0.6);
+  color: #ffffff;
+}
+
+.bf-btn-schedule-dispatch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  font-size: 1.02rem;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bf-btn-schedule-dispatch:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+/* 5. Hero Trust Metrics Bar (24/7 Response, 98.7% AFUE, 100% Satisfaction) */
+.bf-hero-stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  padding: 12px 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 24px;
+}
+
+.bf-hero-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bf-hero-stat-val {
+  font-size: 1.42rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bf-hero-stat-val.val-flame {
+  color: #ff6b35;
+}
+
+.bf-hero-stat-val.val-blue {
+  color: #38bdf8;
+}
+
+.bf-hero-stat-val.val-green {
+  color: #34d399;
+}
+
+.bf-hero-stat-lbl {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bf-hero-stat-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* 6. Centerpiece Showcase */
 .bf-hero-centerpiece-wrap {
   width: 100%;
   display: flex;
@@ -1113,6 +1259,8 @@
       "overtime  emblem"
       "pricing   emblem"
       "google    emblem"
+      "actions   emblem"
+      "stats     emblem"
       "seo       emblem";
     column-gap: 48px;
     row-gap: 12px;
@@ -1132,6 +1280,17 @@
   .bf-hero-google-capsule {
     grid-area: google;
     margin: 0;
+    max-width: 480px;
+  }
+
+  .bf-hero-cta-actions {
+    grid-area: actions;
+    margin-bottom: 0;
+  }
+
+  .bf-hero-stats-row {
+    grid-area: stats;
+    margin-bottom: 0;
     max-width: 480px;
   }
 
@@ -1231,11 +1390,45 @@
   .bf-pricing-text-wrap {
     align-items: center;
   }
+  .bf-pricing-desc {
+    text-align: center;
+    margin: 4px auto 0;
+  }
   .bf-hero-google-capsule {
-    margin: 0 auto 12px auto;
+    margin: 0 auto 16px auto;
     width: 100%;
     max-width: 440px;
     padding: 12px 18px 14px;
+  }
+  .bf-hero-cta-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    gap: 10px;
+    margin: 0 auto 16px auto;
+  }
+  .bf-btn-explore-systems, .bf-btn-schedule-dispatch {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 0.98rem;
+  }
+  .bf-hero-stats-row {
+    width: 100%;
+    max-width: 380px;
+    justify-content: space-around;
+    padding: 10px 14px;
+    margin: 0 auto 20px auto;
+  }
+  .bf-hero-stat-item {
+    align-items: center;
+    text-align: center;
+  }
+  .bf-hero-stat-val {
+    font-size: 1.25rem;
+  }
+  .bf-hero-stat-lbl {
+    font-size: 0.62rem;
   }
   .bf-btn-quick-call {
     width: 100%;
@@ -1670,6 +1863,33 @@
     font-size: 0.82rem;
     gap: 3px;
   }
+  .bf-pricing-desc {
+    font-size: 0.84rem;
+    margin-top: 3px;
+  }
+  .bf-hero-cta-actions {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .bf-btn-explore-systems {
+    font-size: 0.92rem;
+    padding: 11px 18px;
+  }
+  .bf-btn-schedule-dispatch {
+    font-size: 0.88rem;
+    padding: 10px 18px;
+  }
+  .bf-hero-stats-row {
+    padding: 8px 12px;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .bf-hero-stat-val {
+    font-size: 1.15rem;
+  }
+  .bf-hero-stat-lbl {
+    font-size: 0.58rem;
+  }
 
   .bf-hero-centerpiece-wrap {
     margin-top: 2px;
@@ -1835,6 +2055,27 @@
   .bf-gc-highlight {
     font-size: 0.72rem;
     gap: 2px;
+  }
+  .bf-pricing-desc {
+    font-size: 0.76rem;
+  }
+  .bf-btn-explore-systems {
+    font-size: 0.84rem;
+    padding: 9px 14px;
+  }
+  .bf-btn-schedule-dispatch {
+    font-size: 0.82rem;
+    padding: 8px 14px;
+  }
+  .bf-hero-stats-row {
+    padding: 6px 10px;
+    gap: 6px;
+  }
+  .bf-hero-stat-val {
+    font-size: 1.05rem;
+  }
+  .bf-hero-stat-lbl {
+    font-size: 0.52rem;
   }
   .bf-hero-3d-logo {
     max-width: 185px;
